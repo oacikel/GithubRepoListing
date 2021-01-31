@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Github Repo Listing</string>
+    <string name="hint_username">Username</string>
+    <string name="button_submit">SUBMIT</string>
+    <string name="stars_title">Stars:</string>
+    <string name="open_issues_title">Open Issues:</string>
 </resources>

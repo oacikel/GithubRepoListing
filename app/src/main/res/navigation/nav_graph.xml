@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/homeFragment">
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.ocul.githubrepolisting.view.fragments.home.HomeFragment"
+        android:label="Home Fragment"
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_homeFragment_to_repoDetailFragment"
+            app:destination="@id/repoDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/repoDetailFragment"
+        android:name="com.ocul.githubrepolisting.view.fragments.repoDetail.RepoDetailFragment"
+        android:label="RepoDetailFragment">
+        <argument
+            android:name="repoName"
+            app:argType="string"
+            android:defaultValue="N/A" />
+        <argument
+            android:name="starCount"
+            app:argType="integer"
+            android:defaultValue="0" />
+        <argument
+            android:name="openIssueCount"
+            app:argType="integer"
+            android:defaultValue="0" />
+        <argument
+            android:name="ownerName"
+            app:argType="string"
+            android:defaultValue="N/A" />
+        <argument
+            android:name="avatar_url"
+            app:argType="string"
+            android:defaultValue="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" />
+    </fragment>
+</navigation>
