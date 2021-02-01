@@ -1,14 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<layout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools">
+<layout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
     <data>
 
         <import type="android.view.View" />
-
-        <variable
-            name="repodetailviewmodel"
-            type="com.ocul.githubrepolisting.view.fragments.repoDetail.RepoDetailFragmentViewModel" />
         <variable
             name="selectedRepo"
             type="com.ocul.githubrepolisting.model.RepoItem"/>
@@ -19,7 +15,7 @@
         android:layout_height="match_parent">
 
         <ImageView
-            android:id="@+id/imageView"
+            android:id="@+id/imageViewAvatar"
             android:layout_width="150dp"
             android:layout_height="150dp"
             android:layout_marginStart="8dp"
@@ -33,11 +29,11 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
-            android:layout_marginEnd="8dp"
+            android:layout_marginTop="8dp"
             android:text="@{selectedRepo.owner.login}"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/imageView"
-            app:layout_constraintTop_toTopOf="@+id/imageView" />
+            app:layout_constraintStart_toEndOf="@+id/imageViewAvatar"
+            app:layout_constraintTop_toTopOf="@+id/imageViewAvatar" />
 
         <TextView
             android:id="@+id/textViewStarsTitle"
@@ -45,15 +41,15 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
             android:text="@string/stars_title"
-            app:layout_constraintStart_toStartOf="@+id/imageView"
-            app:layout_constraintTop_toBottomOf="@+id/imageView" />
+            app:layout_constraintStart_toStartOf="@+id/imageViewAvatar"
+            app:layout_constraintTop_toBottomOf="@+id/imageViewAvatar" />
 
         <TextView
             android:id="@+id/textViewStarCount"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
-            android:text="@{selectedRepo.stargazers_count}"
+            android:text="@{selectedRepo.owner.login}"
             app:layout_constraintStart_toEndOf="@+id/textViewStarsTitle"
             app:layout_constraintTop_toTopOf="@+id/textViewStarsTitle" />
 
@@ -71,7 +67,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
-            android:text="@{selectedRepo.open_issues_count}"
+            android:text="@{selectedRepo.owner.login}"
             app:layout_constraintBottom_toBottomOf="@+id/textViewOpenIssuesTitle"
             app:layout_constraintStart_toEndOf="@+id/textViewOpenIssuesTitle"
             app:layout_constraintTop_toTopOf="@+id/textViewOpenIssuesTitle" />
