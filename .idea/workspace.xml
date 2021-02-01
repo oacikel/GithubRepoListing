@@ -10,8 +10,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e3f687e4-cb11-4867-a95d-811e7025336a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/ocul/githubrepolisting/repository/PrefRepository.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/menu/action_buttons.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.8.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.8.1/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.8.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.8.1/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.8.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.8.1/fileHashes/fileHashes.bin" afterDir="false" />
@@ -24,16 +22,11 @@
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/ocul/githubrepolisting/model/Response.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/ocul/githubrepolisting/model/Response.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/ocul/githubrepolisting/util/Constants.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/ocul/githubrepolisting/util/Constants.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/ocul/githubrepolisting/view/activities/main/MainActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/ocul/githubrepolisting/view/activities/main/MainActivity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/ocul/githubrepolisting/view/adapters/ReposAdapter.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/ocul/githubrepolisting/view/adapters/ReposAdapter.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/ocul/githubrepolisting/view/adapters/viewHoders/ReposViewHolder.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/ocul/githubrepolisting/view/adapters/viewHoders/ReposViewHolder.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/ocul/githubrepolisting/view/fragments/home/HomeFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/ocul/githubrepolisting/view/fragments/home/HomeFragment.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/ocul/githubrepolisting/view/fragments/repoDetail/RepoDetailFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/ocul/githubrepolisting/view/fragments/repoDetail/RepoDetailFragment.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/ocul/githubrepolisting/view/fragments/repoDetail/RepoDetailFragmentViewModel.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/ocul/githubrepolisting/view/fragments/repoDetail/RepoDetailFragmentViewModel.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/navigation/nav_graph.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/navigation/nav_graph.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/list_item_repo.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/list_item_repo.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -216,74 +209,74 @@
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state x="696" y="297" key="AndroidProcessChooserDialog/0.0.1680.1050@0.0.1680.1050" timestamp="1612167623894" />
-    <state width="1638" height="415" key="GridCell.Tab.0.bottom" timestamp="1612214970474">
+    <state width="1638" height="415" key="GridCell.Tab.0.bottom" timestamp="1612219672867">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1638" height="415" key="GridCell.Tab.0.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1612214970474" />
-    <state width="1638" height="339" key="GridCell.Tab.0.bottom/0.23.1680.1027@0.23.1680.1027" timestamp="1612214367620" />
-    <state width="1638" height="415" key="GridCell.Tab.0.center" timestamp="1612214970473">
+    <state width="1638" height="415" key="GridCell.Tab.0.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1612219672867" />
+    <state width="1638" height="339" key="GridCell.Tab.0.bottom/0.23.1680.1027@0.23.1680.1027" timestamp="1612219654579" />
+    <state width="1638" height="415" key="GridCell.Tab.0.center" timestamp="1612219672865">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1638" height="415" key="GridCell.Tab.0.center/0.0.1680.1050@0.0.1680.1050" timestamp="1612214970473" />
-    <state width="1638" height="339" key="GridCell.Tab.0.center/0.23.1680.1027@0.23.1680.1027" timestamp="1612214367619" />
-    <state width="1638" height="415" key="GridCell.Tab.0.left" timestamp="1612214970472">
+    <state width="1638" height="415" key="GridCell.Tab.0.center/0.0.1680.1050@0.0.1680.1050" timestamp="1612219672865" />
+    <state width="1638" height="339" key="GridCell.Tab.0.center/0.23.1680.1027@0.23.1680.1027" timestamp="1612219654578" />
+    <state width="1638" height="415" key="GridCell.Tab.0.left" timestamp="1612219672864">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1638" height="415" key="GridCell.Tab.0.left/0.0.1680.1050@0.0.1680.1050" timestamp="1612214970472" />
-    <state width="1638" height="339" key="GridCell.Tab.0.left/0.23.1680.1027@0.23.1680.1027" timestamp="1612214367618" />
-    <state width="1638" height="415" key="GridCell.Tab.0.right" timestamp="1612214970473">
+    <state width="1638" height="415" key="GridCell.Tab.0.left/0.0.1680.1050@0.0.1680.1050" timestamp="1612219672864" />
+    <state width="1638" height="339" key="GridCell.Tab.0.left/0.23.1680.1027@0.23.1680.1027" timestamp="1612219654578" />
+    <state width="1638" height="415" key="GridCell.Tab.0.right" timestamp="1612219672866">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1638" height="415" key="GridCell.Tab.0.right/0.0.1680.1050@0.0.1680.1050" timestamp="1612214970473" />
-    <state width="1638" height="339" key="GridCell.Tab.0.right/0.23.1680.1027@0.23.1680.1027" timestamp="1612214367619" />
-    <state width="1638" height="415" key="GridCell.Tab.1.bottom" timestamp="1612214970477">
+    <state width="1638" height="415" key="GridCell.Tab.0.right/0.0.1680.1050@0.0.1680.1050" timestamp="1612219672866" />
+    <state width="1638" height="339" key="GridCell.Tab.0.right/0.23.1680.1027@0.23.1680.1027" timestamp="1612219654579" />
+    <state width="1638" height="415" key="GridCell.Tab.1.bottom" timestamp="1612219564261">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1638" height="415" key="GridCell.Tab.1.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1612214970477" />
-    <state width="1638" height="415" key="GridCell.Tab.1.center" timestamp="1612214970475">
+    <state width="1638" height="415" key="GridCell.Tab.1.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1612219564261" />
+    <state width="1638" height="415" key="GridCell.Tab.1.center" timestamp="1612219564259">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1638" height="415" key="GridCell.Tab.1.center/0.0.1680.1050@0.0.1680.1050" timestamp="1612214970475" />
-    <state width="1638" height="415" key="GridCell.Tab.1.left" timestamp="1612214970475">
+    <state width="1638" height="415" key="GridCell.Tab.1.center/0.0.1680.1050@0.0.1680.1050" timestamp="1612219564259" />
+    <state width="1638" height="415" key="GridCell.Tab.1.left" timestamp="1612219564258">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1638" height="415" key="GridCell.Tab.1.left/0.0.1680.1050@0.0.1680.1050" timestamp="1612214970475" />
-    <state width="1638" height="415" key="GridCell.Tab.1.right" timestamp="1612214970476">
+    <state width="1638" height="415" key="GridCell.Tab.1.left/0.0.1680.1050@0.0.1680.1050" timestamp="1612219564258" />
+    <state width="1638" height="415" key="GridCell.Tab.1.right" timestamp="1612219564260">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1638" height="415" key="GridCell.Tab.1.right/0.0.1680.1050@0.0.1680.1050" timestamp="1612214970476" />
-    <state width="1638" height="415" key="GridCell.Tab.2.bottom" timestamp="1612214970478">
+    <state width="1638" height="415" key="GridCell.Tab.1.right/0.0.1680.1050@0.0.1680.1050" timestamp="1612219564260" />
+    <state width="1638" height="415" key="GridCell.Tab.2.bottom" timestamp="1612219564263">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1638" height="415" key="GridCell.Tab.2.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1612214970478" />
-    <state width="1638" height="415" key="GridCell.Tab.2.center" timestamp="1612214970478">
+    <state width="1638" height="415" key="GridCell.Tab.2.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1612219564263" />
+    <state width="1638" height="415" key="GridCell.Tab.2.center" timestamp="1612219564262">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1638" height="415" key="GridCell.Tab.2.center/0.0.1680.1050@0.0.1680.1050" timestamp="1612214970478" />
-    <state width="1638" height="415" key="GridCell.Tab.2.left" timestamp="1612214970477">
+    <state width="1638" height="415" key="GridCell.Tab.2.center/0.0.1680.1050@0.0.1680.1050" timestamp="1612219564262" />
+    <state width="1638" height="415" key="GridCell.Tab.2.left" timestamp="1612219564261">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1638" height="415" key="GridCell.Tab.2.left/0.0.1680.1050@0.0.1680.1050" timestamp="1612214970477" />
-    <state width="1638" height="415" key="GridCell.Tab.2.right" timestamp="1612214970478">
+    <state width="1638" height="415" key="GridCell.Tab.2.left/0.0.1680.1050@0.0.1680.1050" timestamp="1612219564261" />
+    <state width="1638" height="415" key="GridCell.Tab.2.right" timestamp="1612219564263">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1638" height="415" key="GridCell.Tab.2.right/0.0.1680.1050@0.0.1680.1050" timestamp="1612214970478" />
-    <state width="1638" height="415" key="GridCell.Tab.3.bottom" timestamp="1612214970481">
+    <state width="1638" height="415" key="GridCell.Tab.2.right/0.0.1680.1050@0.0.1680.1050" timestamp="1612219564263" />
+    <state width="1638" height="415" key="GridCell.Tab.3.bottom" timestamp="1612219564266">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1638" height="415" key="GridCell.Tab.3.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1612214970481" />
-    <state width="1638" height="415" key="GridCell.Tab.3.center" timestamp="1612214970479">
+    <state width="1638" height="415" key="GridCell.Tab.3.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1612219564266" />
+    <state width="1638" height="415" key="GridCell.Tab.3.center" timestamp="1612219564265">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1638" height="415" key="GridCell.Tab.3.center/0.0.1680.1050@0.0.1680.1050" timestamp="1612214970479" />
-    <state width="1638" height="415" key="GridCell.Tab.3.left" timestamp="1612214970479">
+    <state width="1638" height="415" key="GridCell.Tab.3.center/0.0.1680.1050@0.0.1680.1050" timestamp="1612219564265" />
+    <state width="1638" height="415" key="GridCell.Tab.3.left" timestamp="1612219564264">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1638" height="415" key="GridCell.Tab.3.left/0.0.1680.1050@0.0.1680.1050" timestamp="1612214970479" />
-    <state width="1638" height="415" key="GridCell.Tab.3.right" timestamp="1612214970480">
+    <state width="1638" height="415" key="GridCell.Tab.3.left/0.0.1680.1050@0.0.1680.1050" timestamp="1612219564264" />
+    <state width="1638" height="415" key="GridCell.Tab.3.right" timestamp="1612219564265">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1638" height="415" key="GridCell.Tab.3.right/0.0.1680.1050@0.0.1680.1050" timestamp="1612214970480" />
+    <state width="1638" height="415" key="GridCell.Tab.3.right/0.0.1680.1050@0.0.1680.1050" timestamp="1612219564265" />
     <state x="510" y="372" key="com.intellij.ide.util.TipDialog" timestamp="1612128042088">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
@@ -304,6 +297,16 @@
           <url>file://$PROJECT_DIR$/app/build/generated/source/kapt/debug/com/ocul/githubrepolisting/databinding/FragmentRepoDetailBindingImpl.java</url>
           <line>132</line>
           <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/ocul/githubrepolisting/view/fragments/repoDetail/RepoDetailFragmentViewModel.kt</url>
+          <line>49</line>
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/ocul/githubrepolisting/view/fragments/repoDetail/RepoDetailFragmentViewModel.kt</url>
+          <line>47</line>
+          <option name="timeStamp" value="14" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

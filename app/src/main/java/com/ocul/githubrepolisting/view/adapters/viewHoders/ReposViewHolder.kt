@@ -1,5 +1,6 @@
 package com.ocul.githubrepolisting.view.adapters.viewHoders
 
+import android.view.View
 import androidx.core.os.bundleOf
 import androidx.databinding.ViewDataBinding
 import androidx.navigation.findNavController
@@ -7,15 +8,24 @@ import androidx.recyclerview.widget.RecyclerView
 import com.ocul.githubrepolisting.BR
 import com.ocul.githubrepolisting.R
 import com.ocul.githubrepolisting.model.RepoItem
+import com.ocul.githubrepolisting.repository.PrefRepository
 import kotlinx.android.synthetic.main.list_item_repo.view.*
 import org.jetbrains.anko.sdk27.coroutines.onClick
 
 class ReposViewHolder constructor(
     private val dataBinding: ViewDataBinding,
+    private val prefRepository:PrefRepository
 ) : RecyclerView.ViewHolder(dataBinding.root) {
 
+
     val repoName = itemView.textViewRepoName
+    val imageFavourite =itemView.imageButtonFavourite
     fun setup(repoItemData: RepoItem) {
+        if(prefRepository.getFavouriteIds()?.contains(repoItemData.id.toString()) == true) {
+            imageFavourite.visibility = View.VISIBLE
+        }else{
+            imageFavourite.visibility = View.INVISIBLE
+        }
         dataBinding.setVariable(BR.repoItemData, repoItemData)
         dataBinding.executePendingBindings()
         repoName.setText(repoItemData.name)
