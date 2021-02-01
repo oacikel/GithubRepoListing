@@ -7,7 +7,6 @@ import androidx.recyclerview.widget.RecyclerView
 import com.ocul.githubrepolisting.BR
 import com.ocul.githubrepolisting.R
 import com.ocul.githubrepolisting.model.RepoItem
-import com.ocul.githubrepolisting.view.fragments.home.HomeFragmentViewModel
 import kotlinx.android.synthetic.main.list_item_repo.view.*
 import org.jetbrains.anko.sdk27.coroutines.onClick
 
@@ -17,12 +16,13 @@ class ReposViewHolder constructor(
 
     val repoName = itemView.textViewRepoName
     fun setup(repoItemData: RepoItem) {
-        dataBinding.setVariable(BR._all, repoItemData)
+        dataBinding.setVariable(BR.repoItemData, repoItemData)
         dataBinding.executePendingBindings()
         repoName.setText(repoItemData.name)
 
         itemView.onClick {
             val bundle = bundleOf(
+                "id" to repoItemData.id,
                 "starCount" to repoItemData.stargazers_count,
                 "openIssueCount" to repoItemData.open_issues_count,
                 "ownerName" to repoItemData.owner.login,

@@ -37,5 +37,9 @@
             android:name="avatar_url"
             app:argType="string"
             android:defaultValue="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" />
+        <argument
+            android:name="id"
+            app:argType="integer"
+            android:defaultValue="0" />
     </fragment>
 </navigation>

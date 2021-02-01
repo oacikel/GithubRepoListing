@@ -11,11 +11,9 @@ import androidx.lifecycle.ViewModelProviders
 import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.ocul.githubrepolisting.databinding.FragmentHomeBinding
-import com.ocul.githubrepolisting.util.Constants.Companion.DEBUG
 import com.ocul.githubrepolisting.view.adapters.ReposAdapter
 import kotlinx.android.synthetic.main.fragment_home.*
 import org.jetbrains.anko.sdk27.coroutines.onClick
-import java.lang.Exception
 
 
 class HomeFragment : Fragment() {
@@ -23,7 +21,6 @@ class HomeFragment : Fragment() {
     private lateinit var adapter: ReposAdapter
     private lateinit var viewModel: HomeFragmentViewModel
     private val LOG_TAG = "OCULCAN - HomeFragment"
-
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -41,7 +38,6 @@ class HomeFragment : Fragment() {
         }
         return viewDataBinding.root
     }
-
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
@@ -67,9 +63,7 @@ class HomeFragment : Fragment() {
         })
     }
 
-
     private fun setupAdapter() {
-
         adapter = ReposAdapter()
         val layoutManager = LinearLayoutManager(activity)
         recyclerViewReposList.layoutManager = layoutManager
@@ -81,4 +75,5 @@ class HomeFragment : Fragment() {
         )
         recyclerViewReposList.adapter = adapter
     }
+
 }
