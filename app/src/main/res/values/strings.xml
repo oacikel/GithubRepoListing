@@ -5,4 +5,5 @@
     <string name="stars_title">Stars:</string>
     <string name="open_issues_title">Open Issues:</string>
     <string name="action_favorite">Favourite</string>
+    <string name="repo_not_available">Could not find any repos to display</string>
 </resources>

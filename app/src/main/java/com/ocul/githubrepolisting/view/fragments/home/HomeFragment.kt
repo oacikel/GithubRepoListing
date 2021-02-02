@@ -57,9 +57,24 @@ class HomeFragment : Fragment() {
             adapter.updateRepoList(it)
             Log.d(LOG_TAG, "Updating Repo List")
         })
-        viewDataBinding.viewmodel?.liveDataRepos?.observe(viewLifecycleOwner, Observer {
-            adapter.updateRepoList(it)
-            Log.d(LOG_TAG, "Updating Repo List")
+        viewModel.empty.observe(viewLifecycleOwner, {
+            if (it) {
+                textViewNoRepo.visibility = View.VISIBLE
+                recyclerViewReposList.visibility=View.GONE
+            } else {
+                textViewNoRepo.visibility = View.GONE
+                recyclerViewReposList.visibility=View.VISIBLE
+            }
+        })
+        viewModel.loading.observe(viewLifecycleOwner, {
+            if (it) {
+                progressBarLoading.visibility = View.VISIBLE
+                recyclerViewReposList.visibility=View.GONE
+                textViewNoRepo.visibility = View.GONE
+            } else {
+                progressBarLoading.visibility = View.GONE
+                recyclerViewReposList.visibility=View.VISIBLE
+            }
         })
     }
 

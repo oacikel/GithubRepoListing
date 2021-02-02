@@ -15,14 +15,17 @@ class HomeFragmentViewModel : ViewModel() {
 
     fun fetchRepos(userName:String) {
         loading.value = true
+        Log.d(LOG_TAG, "Lodaing")
         Repository.getInstance().getRepoList(userName) { isSuccess, response ->
             loading.value = false
-            if (isSuccess) {
+            Log.d(LOG_TAG, "Loding complete")
+            if (isSuccess && response?.size!=0) {
                 liveDataRepos.value = response
                 Log.d(LOG_TAG, "Retrieved a list of repos. Count: "+liveDataRepos.value?.size)
                 empty.value = false
             } else {
                 empty.value = true
+                Log.d(LOG_TAG, "List is empty")
             }
         }
     }
