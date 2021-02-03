@@ -15,7 +15,7 @@ class ReposAdapter() : RecyclerView.Adapter<ReposViewHolder>(){
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ReposViewHolder {
         val inflater = LayoutInflater.from(parent.context)
         val dataBinding = ListItemRepoBinding.inflate(inflater, parent, false)
-        val prefRepository: PrefRepository=PrefRepository(parent.context)
+        val prefRepository=PrefRepository(parent.context)
         return ReposViewHolder(dataBinding,prefRepository)
     }
 

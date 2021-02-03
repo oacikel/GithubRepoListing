@@ -5,7 +5,7 @@ class Constants {
         const val BASE_URL = "https://api.github.com/"
         const val REQUEST_TIMEOUT_DURATION = 10
         const val DEBUG = true
-        const val PREFERENCE_NAME = "MY_APP_PREF"
+        const val PREFERENCE_NAME = "REPO_LISTING_PREF"
         const val PREF_LOGGED_IN = "PREF_LOGGED_IN"
         const val PREF_IS_LANGUAGE_SELECTED = "PREF_IS_LANGUAGE_SELECTED"
         const val PREF_CURRENT_SELECTED_LANGUAGE = "PREF_CURRENT_SELECTED_LANGUAGE"

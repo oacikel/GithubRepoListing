@@ -2,6 +2,7 @@ package com.ocul.githubrepolisting.repository
 
 import android.content.Context
 import android.content.SharedPreferences
+import android.util.Log
 import com.google.gson.Gson
 import com.ocul.githubrepolisting.util.Constants.Companion.PREFERENCE_NAME
 import com.ocul.githubrepolisting.util.Constants.Companion.PREF_FAVOURITE_REPOS
@@ -11,6 +12,7 @@ import com.ocul.githubrepolisting.util.Constants.Companion.PREF_SHARE_MESSAGE
 
 class PrefRepository(val context: Context) {
 
+    private val LOG_TAG="OCULCAN - Prefrepo"
     private val pref: SharedPreferences =
         context.getSharedPreferences(PREFERENCE_NAME, Context.MODE_PRIVATE)
     private val editor = pref.edit()
@@ -32,6 +34,7 @@ class PrefRepository(val context: Context) {
     }
 
     private fun String.put(set: Set<String>) {
+        editor.clear()
         editor.putStringSet(this, set)
         editor.commit()
     }
@@ -85,11 +88,14 @@ class PrefRepository(val context: Context) {
         }
         //check if current list contains the id
         if (set.contains(id)) {
+            Log.d(LOG_TAG,"Removing id "+id+" from favourites.")
             //remove the id if it does
             set.removeIf { it == id }
         } else {
             set.add(id)
         }
+        set.remove("")
+        Log.d(LOG_TAG,"Set contents: "+set.toString())
         PREF_FAVOURITE_REPOS.put(set)
     }
 
