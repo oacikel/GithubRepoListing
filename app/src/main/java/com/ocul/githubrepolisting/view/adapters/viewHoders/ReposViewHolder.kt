@@ -1,5 +1,6 @@
 package com.ocul.githubrepolisting.view.adapters.viewHoders
 
+import android.util.Log
 import android.view.View
 import androidx.core.os.bundleOf
 import androidx.databinding.ViewDataBinding
@@ -16,14 +17,17 @@ class ReposViewHolder constructor(
     private val dataBinding: ViewDataBinding,
     private val prefRepository:PrefRepository
 ) : RecyclerView.ViewHolder(dataBinding.root) {
-
-
+    private val LOG_TAG="OCULCAN - ReposViewHolder"
     val repoName = itemView.textViewRepoName
     val imageFavourite =itemView.imageButtonFavourite
     fun setup(repoItemData: RepoItem) {
+        Log.d(LOG_TAG,"Favourited item count is: "+prefRepository.getFavouriteIds()?.size)
+        prefRepository.getFavouriteIds()?.forEach { Log.d(LOG_TAG,"id name: "+it) }
         if(prefRepository.getFavouriteIds()?.contains(repoItemData.id.toString()) == true) {
+            Log.i(LOG_TAG,"Repo with id "+repoItemData.id+" is within favourites list. A star icon will be added")
             imageFavourite.visibility = View.VISIBLE
         }else{
+            Log.i(LOG_TAG,"Repo with id "+repoItemData.id+" is NOT within favourites list. A star icon will be removed")
             imageFavourite.visibility = View.INVISIBLE
         }
         dataBinding.setVariable(BR.repoItemData, repoItemData)

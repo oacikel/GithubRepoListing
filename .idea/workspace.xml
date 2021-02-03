@@ -6,6 +6,7 @@
     </shared>
   </component>
   <component name="AndroidLogFilters">
+    <option name="TOOL_WINDOW_CUSTOM_FILTER" value="oculcan" />
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
   </component>
   <component name="ChangeListManager">
@@ -20,12 +21,12 @@
       <change beforePath="$PROJECT_DIR$/.gradle/6.8.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.8.1/javaCompile/javaCompile.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.8.1/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.8.1/javaCompile/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/ocul/githubrepolisting/view/fragments/home/HomeFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/ocul/githubrepolisting/view/fragments/home/HomeFragment.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/ocul/githubrepolisting/view/fragments/home/HomeFragmentViewModel.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/ocul/githubrepolisting/view/fragments/home/HomeFragmentViewModel.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_home.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_home.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/ocul/githubrepolisting/repository/PrefRepository.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/ocul/githubrepolisting/repository/PrefRepository.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/ocul/githubrepolisting/util/Constants.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/ocul/githubrepolisting/util/Constants.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/ocul/githubrepolisting/view/activities/main/MainActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/ocul/githubrepolisting/view/activities/main/MainActivity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/ocul/githubrepolisting/view/adapters/ReposAdapter.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/ocul/githubrepolisting/view/adapters/ReposAdapter.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/ocul/githubrepolisting/view/adapters/viewHoders/ReposViewHolder.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/ocul/githubrepolisting/view/adapters/viewHoders/ReposViewHolder.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -180,10 +181,10 @@
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state x="365" y="264" key="#PSD/0.0.1680.1050@0.0.1680.1050" timestamp="1611680225378" />
-    <state x="619" y="248" key="#com.intellij.ide.util.MemberChooser" timestamp="1612258926596">
+    <state x="619" y="248" key="#com.intellij.ide.util.MemberChooser" timestamp="1612386491597">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state x="619" y="248" key="#com.intellij.ide.util.MemberChooser/0.0.1680.1050@0.0.1680.1050" timestamp="1612258926596" />
+    <state x="619" y="248" key="#com.intellij.ide.util.MemberChooser/0.0.1680.1050@0.0.1680.1050" timestamp="1612386491597" />
     <state x="150" y="328" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1612101567787">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
@@ -208,25 +209,25 @@
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state x="696" y="297" key="AndroidProcessChooserDialog/0.0.1680.1050@0.0.1680.1050" timestamp="1612167623894" />
-    <state width="1638" height="415" key="GridCell.Tab.0.bottom" timestamp="1612221093299">
+    <state width="1638" height="338" key="GridCell.Tab.0.bottom" timestamp="1612384159718">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1638" height="415" key="GridCell.Tab.0.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1612221093299" />
+    <state width="1638" height="338" key="GridCell.Tab.0.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1612384159718" />
     <state width="1638" height="339" key="GridCell.Tab.0.bottom/0.23.1680.1027@0.23.1680.1027" timestamp="1612220724784" />
-    <state width="1638" height="415" key="GridCell.Tab.0.center" timestamp="1612221093298">
+    <state width="1638" height="338" key="GridCell.Tab.0.center" timestamp="1612384159717">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1638" height="415" key="GridCell.Tab.0.center/0.0.1680.1050@0.0.1680.1050" timestamp="1612221093298" />
+    <state width="1638" height="338" key="GridCell.Tab.0.center/0.0.1680.1050@0.0.1680.1050" timestamp="1612384159717" />
     <state width="1638" height="339" key="GridCell.Tab.0.center/0.23.1680.1027@0.23.1680.1027" timestamp="1612220724783" />
-    <state width="1638" height="415" key="GridCell.Tab.0.left" timestamp="1612221093297">
+    <state width="1638" height="338" key="GridCell.Tab.0.left" timestamp="1612384159716">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1638" height="415" key="GridCell.Tab.0.left/0.0.1680.1050@0.0.1680.1050" timestamp="1612221093297" />
+    <state width="1638" height="338" key="GridCell.Tab.0.left/0.0.1680.1050@0.0.1680.1050" timestamp="1612384159716" />
     <state width="1638" height="339" key="GridCell.Tab.0.left/0.23.1680.1027@0.23.1680.1027" timestamp="1612220724782" />
-    <state width="1638" height="415" key="GridCell.Tab.0.right" timestamp="1612221093298">
+    <state width="1638" height="338" key="GridCell.Tab.0.right" timestamp="1612384159718">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1638" height="415" key="GridCell.Tab.0.right/0.0.1680.1050@0.0.1680.1050" timestamp="1612221093298" />
+    <state width="1638" height="338" key="GridCell.Tab.0.right/0.0.1680.1050@0.0.1680.1050" timestamp="1612384159718" />
     <state width="1638" height="339" key="GridCell.Tab.0.right/0.23.1680.1027@0.23.1680.1027" timestamp="1612220724783" />
     <state width="1638" height="415" key="GridCell.Tab.1.bottom" timestamp="1612221093301">
       <screen x="0" y="0" width="1680" height="1050" />
@@ -280,10 +281,10 @@
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state x="510" y="372" key="com.intellij.ide.util.TipDialog/0.0.1680.1050@0.0.1680.1050" timestamp="1612128042088" />
-    <state x="494" y="282" width="940" height="486" key="find.popup" timestamp="1612258906996">
+    <state x="494" y="282" width="940" height="486" key="find.popup" timestamp="1612383700558">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state x="494" y="282" width="940" height="486" key="find.popup/0.0.1680.1050@0.0.1680.1050" timestamp="1612258906996" />
+    <state x="494" y="282" width="940" height="486" key="find.popup/0.0.1680.1050@0.0.1680.1050" timestamp="1612383700558" />
     <state x="565" y="162" key="refactoring.ChangeSignatureDialog" timestamp="1612168021071">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
