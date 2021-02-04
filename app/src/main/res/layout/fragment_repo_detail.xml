@@ -49,7 +49,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
-            android:text="@{selectedRepo.owner.login}"
+            android:text="@{Integer.toString(selectedRepo.stargazers_count)}"
             app:layout_constraintStart_toEndOf="@+id/textViewStarsTitle"
             app:layout_constraintTop_toTopOf="@+id/textViewStarsTitle" />
 
@@ -67,7 +67,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
-            android:text="@{selectedRepo.owner.login}"
+            android:text="@{Integer.toString(selectedRepo.open_issues_count)}"
             app:layout_constraintBottom_toBottomOf="@+id/textViewOpenIssuesTitle"
             app:layout_constraintStart_toEndOf="@+id/textViewOpenIssuesTitle"
             app:layout_constraintTop_toTopOf="@+id/textViewOpenIssuesTitle" />

@@ -12,6 +12,7 @@ import androidx.appcompat.widget.Toolbar
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.AndroidViewModel
 import com.ocul.githubrepolisting.R
+import com.ocul.githubrepolisting.databinding.FragmentRepoDetailBinding
 import com.ocul.githubrepolisting.model.Owner
 import com.ocul.githubrepolisting.model.RepoItem
 import com.ocul.githubrepolisting.repository.PrefRepository
@@ -40,7 +41,7 @@ class RepoDetailFragmentViewModel(application: Application) : AndroidViewModel(a
             menu.findItem(R.id.action_favorite )?.icon=drawbleNotFavourited
         }
     }
-    fun setupFragment(arguments: Bundle, view: View, toolbar: Toolbar?, fragment: Fragment?) {
+    fun setupFragment(arguments: Bundle, view: View, toolbar: Toolbar?,binding: FragmentRepoDetailBinding) {
         Log.d(LOG_TAG, "Executing setup function.")
         val id = arguments.let { RepoDetailFragmentArgs.fromBundle(it).id }
         val starCount = arguments.let { RepoDetailFragmentArgs.fromBundle(it).starCount }
@@ -50,10 +51,7 @@ class RepoDetailFragmentViewModel(application: Application) : AndroidViewModel(a
         val repoName = arguments.let { RepoDetailFragmentArgs.fromBundle(it).repoName }
         selectedRepo =
             RepoItem(id, repoName, Owner(ownerName, avatar_url), starCount, openIssueCount)
-
-        view.textViewOwner.setText(selectedRepo.owner.login)
-        view.textViewOpenIssueCount.setText(selectedRepo.open_issues_count.toString())
-        view.textViewStarCount.setText(selectedRepo.stargazers_count.toString())
+        binding.selectedRepo=selectedRepo
         toolbar?.setTitle(selectedRepo.name)
         Picasso.get().load(selectedRepo.owner.avatar_url).into(view.imageViewAvatar);
     }

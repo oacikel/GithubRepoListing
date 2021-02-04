@@ -4,7 +4,9 @@ import android.os.Bundle
 import android.util.Log
 import android.view.*
 import androidx.appcompat.app.AppCompatActivity
+import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
+import androidx.lifecycle.ViewModelProvider
 import androidx.lifecycle.ViewModelProviders
 import com.ocul.githubrepolisting.R
 import com.ocul.githubrepolisting.databinding.FragmentRepoDetailBinding
@@ -25,20 +27,20 @@ class RepoDetailFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         setHasOptionsMenu(true)
-        binding =
-            FragmentRepoDetailBinding.inflate(inflater, container, false).apply {
-                viewModel =
-                    ViewModelProviders.of(this@RepoDetailFragment)
-                        .get(RepoDetailFragmentViewModel::class.java)
-                setLifecycleOwner(viewLifecycleOwner)
-            }
-        return inflater.inflate(R.layout.fragment_repo_detail, container, false)
+        binding=FragmentRepoDetailBinding.inflate(inflater,container,false).apply {
+            viewModel=ViewModelProvider(this@RepoDetailFragment)
+                .get(RepoDetailFragmentViewModel::class.java)
+            setLifecycleOwner(viewLifecycleOwner)
+        }
+
+        val view =binding.root
+        return view
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         arguments?.let {
-            viewModel.setupFragment(it, view, (parentFragment?.activity as AppCompatActivity).toolbar,this)
+            viewModel.setupFragment(it, view, (parentFragment?.activity as AppCompatActivity).toolbar,binding)
         }
         Log.d(LOG_TAG,"Menu has visible items (before item click): "+activity?.toolbar?.menu?.hasVisibleItems())
 
